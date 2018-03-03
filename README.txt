@@ -1,14 +1,6 @@
- _   _                  _   _     _       _   _          _                    |
-| | | |   ___    __ _  | | | |_  | |__   | \ | |   ___  | |_                  |
-| |_| |  / _ \  / _` | | | | __| | '_ \  |  \| |  / _ \ | __|                 |
-|  _  | |  __/ | (_| | | | | |_  | | | | | |\  | |  __/ | |_                  |
-|_| |_|  \___|  \__,_| |_|  \__| |_| |_| |_| \_|  \___|  \__|                 |
-                                                                              |
-                                       HealthNet by Project Curry             |
-                                                                              |
-------------------------------------------------------------------------------+
-    INSTALLATION                                                              |
-------------------------------------------------------------------------------+
+#MY HOSPITALI
+
+**Installation**
 
 1. Make sure that the target environment for HealthNet has Python 3.2.2 and
    Django 1.6.5 installed and running correctly.
@@ -30,7 +22,7 @@
    to it. The URL you enter should look something like this:
    http://localhost:8000    OR      http://127.0.0.1:8000
 
-7. If this is the first time running HealthNet, when you visit the web address,
+7. If this is the first time running My Hospitali, when you visit the web address,
    you will be prompted to setup an Administrator account through which the
    rest of the system can be configured.
 
@@ -610,16 +602,6 @@ known bugs currently in the HealthNet system:
        properly filled out. HealthNet will tell you what part(s) of the form
        must one. Retry step e.
 
-------------------------------------------------------------------------------+
-    CREDITS                                                                   |
-------------------------------------------------------------------------------+
 
-HealthNet was brought to you by:
-
-    Kaiwen Zheng      -   kxz6582@rit.edu
-    Daniel Roach      -   dxr5716@rit.edu
-    Arshdeep Khalsa   -   ask7708@rit.edu
-    Joseph Cumbo      -   jwc6999@rit.edu
-    David Lor         -   dsl4458@rit.edu
 
 
