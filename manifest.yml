@@ -1,0 +1,6 @@
+applications:
+- name: myhospitali
+# This is command provided by cf -c option
+  command: bash ./run.sh
+# services:
+#   - Sodo_Postgresql
