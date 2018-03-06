@@ -1,4 +1,4 @@
-#MY HOSPITALI
+# MY HOSPITALI
 
 **Installation**
 
@@ -26,9 +26,8 @@
    you will be prompted to setup an Administrator account through which the
    rest of the system can be configured.
 
-------------------------------------------------------------------------------+
-    LOGINS AND PASSWORDS                                                      |
-------------------------------------------------------------------------------+
+**LOGINS AND PASSWORDS**                                                      |
+
 
 We have setup a number of accounts on the system that have been pre populated
 with data to fully show off our interface. The login credentials for them are:
@@ -45,11 +44,9 @@ with data to fully show off our interface. The login credentials for them are:
     Username: patienta@test.com
     Password: a
 
-------------------------------------------------------------------------------+
-    DISCLAIMERS                                                               |
-------------------------------------------------------------------------------+
+**DISCLAIMERS**                                                               |
 
-The HealthNet application provides the following functionality
+The My Hospitali System provides the following functionality
 
 - Patient Registration
 - Administrator Registration
@@ -70,43 +67,32 @@ The HealthNet application provides the following functionality
 - Send Private Message
 - Importing / Exporting Information Through .csv Files
 
-Unfortunately, things don't always work how we want them to. Here is a list of
-known bugs currently in the HealthNet system:
 
-- Patients cannot export information.
-- Administrator is able to change its role to any of the other roles
-  (Patient, Nurse, Doctor)
-- We do not have a unified view of patient medical information, prescriptions,
-  tests, and results.
-- We keep track of admitted and discharged patients in the same list.
-
-------------------------------------------------------------------------------+
-    BASIC USAGE INSTRUCTIONS                                                  |
-------------------------------------------------------------------------------+
+**BASIC USAGE INSTRUCTIONS**                                                
 
 1.  Patient Registration - patients only
 
-    a) When first starting HealthNet, you will be greeted by HealthNet's login
+    a) When first starting My Hospitali, you will be greeted by My Hospitali's login
        page.
 
     b) Once there, press one of the 'Register' buttons located either in the
        upper right corner of the page or in the middle of the page.
 
-    c) HealthNet will take you to a registration form for patients. Once there,
+    c) My Hospitali will take you to a registration form for patients. Once there,
        fill in the form with the information asked for by the form.
 
     d) Once done, press the 'Register' button.
 
     e) You should now be logged in and taken to the dashboard page with a green
        alert message telling you that you have successfully been registered
-       with HealthNet. If you do not see this, the registration form may not
-       have been filled out correctly. HealthNet will tell you what part(s) of
+       with My Hospitali. If you do not see this, the registration form may not
+       have been filled out correctly. My Hospitali will tell you what part(s) of
        the form must be done. Retry steps c and d.
 
 2.  Doctor, Nurse, and/or Administrator Registration - administrators only
 
     a) Doctors, Nurses, and Administrators must be registered by an already
-       existing HealthNet administrator. To do this, an administrator must
+       existing My Hospitali administrator. To do this, an administrator must
        first be logged in.
 
     b) Once the administrator is logged in, move the mouse pointer over to the
@@ -114,7 +100,7 @@ known bugs currently in the HealthNet system:
 	     click 'Manage Users'.
 
     c) You will be directed to a page displaying all of the users registered
-       to HealthNet. In the upper left of the page, next to the side bar,
+       to My Hospitali. In the upper left of the page, next to the side bar,
        press the green 'Add Employee' button.
 
     d) Now you should see the 'Add an Employee' form. Fill in the form,
@@ -125,12 +111,12 @@ known bugs currently in the HealthNet system:
     f) You should now see a green alert message telling you that the new
        doctor, nurse, or administrator account was successfully registered.
        If you do not see one, the form may not have been filled in correctly.
-       HealthNet will tell you what part(s) of the form must be done.
+       My Hospitali will tell you what part(s) of the form must be done.
        Retry steps d and e.
 
-3.  Logging On to HealthNet - any user type
+3.  Logging On to My Hospitali - any user type
 
-    a) When first starting HealthNet, you will be greeted by HealthNet's login
+    a) When first starting My Hospitali, you will be greeted by My Hospitali's login
        page.
 
     b) If you have not already created an account, you cannot login and must
@@ -140,11 +126,11 @@ known bugs currently in the HealthNet system:
        button
 
     c) If you provided the same credentials you used to register, you shall be
-       logged in to HealthNet and be taken to the dashboard page. Otherwise,
+       logged in to My Hospitali and be taken to the dashboard page. Otherwise,
        you shall remain on the login page because your credentials were not
        right. Retype your credentials and try again.
 
-4.  Logging Out of HealthNet - any user type
+4.  Logging Out of My Hospitali - any user type
 
     a) While you are logged into your account, navigate over to
        'Account Management' located on the upper right of the page.
@@ -153,7 +139,7 @@ known bugs currently in the HealthNet system:
 
     c) Now press the 'Logout' button on the bottom of the menu.
 
-    d) HealthNet will log you out of the system and return you back to the
+    d) My Hospitali will log you out of the system and return you back to the
        login page telling you that you have successfully logged out.
 
 5.  Changing Your Password - any user type
@@ -175,7 +161,7 @@ known bugs currently in the HealthNet system:
 
     g) You should now see a green alert message telling you that your
        password has been successfully changed. If you do not see one, your
-       password has not been changed. HealthNet will tell you what password
+       password has not been changed. My Hospitali will tell you what password
        did not match. Retry steps d through f.
 
 6.  Viewing Your Profile - any user type
@@ -200,7 +186,7 @@ known bugs currently in the HealthNet system:
 
     f) You should now see a green alert message telling you that your profile
        has been updated. If you do not see one, your profile has not been
-       updated. HealthNet will tell you what part(s) of the form must be done.
+       updated. My Hospitali will tell you what part(s) of the form must be done.
        Retry steps d through e.
 
 8.  Viewing Your Messages - any user type
@@ -208,7 +194,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Messages'.
 
-    b) HealthNet will take you to your Messages page.
+    b) My Hospitali will take you to your Messages page.
 
     c) To view the messages you have received, press the 'Received messages'
        tab.
@@ -220,7 +206,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Messages'.
 
-    b) HealthNet will take you to your Messages page.
+    b) My Hospitali will take you to your Messages page.
 
     c) To read to a message, press the 'Read' button located under the
        'Options' column.
@@ -236,7 +222,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Messages'.
 
-    b) HealthNet will take you to your Messages page.
+    b) My Hospitali will take you to your Messages page.
 
     c) To reply to a message, you can either first read it and then press the
        'Reply' button on the modal view or press the 'Reply' button located
@@ -249,7 +235,7 @@ known bugs currently in the HealthNet system:
 
     f) You should now be taken back to your Messages page. You should see a
        green alert message telling you that your message was successfully sent.
-       If you do not see this, the message was not sent. HealthNet will tell
+       If you do not see this, the message was not sent. My Hospitali will tell
        you what part(s) of the form must be done. Retry steps d and e.
 
 11. Sending A Message - any user type
@@ -257,7 +243,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Messages'.
 
-    b) HealthNet will take you to your Messages page.
+    b) My Hospitali will take you to your Messages page.
 
     c) Press the green 'New message' button near the top of the screen.
 
@@ -269,7 +255,7 @@ known bugs currently in the HealthNet system:
 
     f) You should now be taken back to your Messages page. You should see a
        green alert message telling you that your message was successfully sent.
-       If you do not see this, the message was not sent. HealthNet will tell
+       If you do not see this, the message was not sent. My Hospitali will tell
        you what part(s) of the form must be done. Retry steps d and e.
 
 12. Archiving A Message - any user type
@@ -277,7 +263,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Messages'.
 
-    b) HealthNet will take you to your Messages page.
+    b) My Hospitali will take you to your Messages page.
 
     c) To archive a message, press the 'Archive' button under the 'Options'
        column.
@@ -290,7 +276,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Appointments'.
 
-    b) HealthNet will take you to your Appointments page.
+    b) My Hospitali will take you to your Appointments page.
 
     c) To view all the appointments that are currently active, press the
        'Active appointments' tab.
@@ -304,7 +290,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Appointments'.
 
-    b) HealthNet will take you to your Appointments page.
+    b) My Hospitali will take you to your Appointments page.
 
     c) Press the green 'New Appointment' button near the top of the page
 
@@ -316,7 +302,7 @@ known bugs currently in the HealthNet system:
     f) You should be taken back to your Appointments page. You should see a
        green alert message telling you that the appointment was successfully
        created. If you do not see this, the appointment was not created.
-       HealthNet will tell you what part(s) of the form must be done.
+       My Hospitali will tell you what part(s) of the form must be done.
        Retry step e.
 
 15. Canceling An Appointment - patients and doctors only
@@ -324,12 +310,12 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Appointments'.
 
-    b) HealthNet will take you to your Appointments page.
+    b) My Hospitali will take you to your Appointments page.
 
     c) To cancel an appointment, press the 'Cancel' button under the 'Options'
        column.
 
-    d) HealthNet will ask for confirmation of intent. Press 'Cancel the
+    d) My Hospitali will ask for confirmation of intent. Press 'Cancel the
        appointment' and the appointment will be canceled.
 
 16. Viewing Medical Tests - patients, nurses, and doctors only
@@ -337,10 +323,10 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Medical Tests'.
 
-    b) HealthNet will take you to your Medical Tests page.
+    b) My Hospitali will take you to your Medical Tests page.
 
     c) From there, you will see all of the medical tests uploaded to the
-       HealthNet system. You can go them by sorting through it, going through
+       My Hospitali system. You can go them by sorting through it, going through
        each set of data manually, or searching for a particular item using the
        search bar in the upper right of the page.
 
@@ -352,7 +338,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Medical Tests'.
 
-    b) HealthNet will take you to your Medical Tests page.
+    b) My Hospitali will take you to your Medical Tests page.
 
     c) Press the green 'Upload Medical Test' button near the top of the page.
 
@@ -362,7 +348,7 @@ known bugs currently in the HealthNet system:
 
     f) You should see a green alert message telling you that the medical test
        was successfully uploaded. If you do not see this, the medical test was
-       not uploaded. HealthNet will tell you what part(s) of the form must be
+       not uploaded. My Hospitali will tell you what part(s) of the form must be
        done. Retry step e.
 
 18. Updating A Medical Test - doctors only
@@ -370,7 +356,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Medical Tests'.
 
-    b) HealthNet will take you to your Medical Tests page.
+    b) My Hospitali will take you to your Medical Tests page.
 
     c) To update a medical test, press the 'Update' button under the 'Options'
        column.
@@ -382,7 +368,7 @@ known bugs currently in the HealthNet system:
 
     e) You should see a green alert message telling you that the medical test
        was successfully uploaded. If you do not see this, the medical test was
-       not uploaded. HealthNet will tell you what part(s) of the form must be
+       not uploaded. My Hospitali will tell you what part(s) of the form must be
        done. Retry step e.
 
 19. Viewing Prescriptions - patients, nurses, and doctors only
@@ -390,10 +376,10 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Prescriptions'.
 
-    b) HealthNet will take you to your Prescriptions page.
+    b) My Hospitali will take you to your Prescriptions page.
 
     c) From there, you will see all of the prescriptions filled by the
-       HealthNet system. You can go them by sorting through it, going through
+       My Hospitali system. You can go them by sorting through it, going through
        each set of data manually, or searching for a particular item using the
        search bar in the upper right of the page.
 
@@ -402,18 +388,18 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Prescriptions'.
 
-    b) HealthNet will take you to your Prescriptions page.
+    b) My Hospitali will take you to your Prescriptions page.
 
     c) Press the green 'Add Prescription' button near the top of the page.
 
-    d) HealthNet will take you to the 'Add Prescriptions' form. Fill out the
+    d) My Hospitali will take you to the 'Add Prescriptions' form. Fill out the
        information asked for by the form.
 
     e) Once done, press the 'Add Prescription' button.
 
     f) You should see a green alert message telling you that the prescription
        was successfully filled out. If you do not see this, the prescription
-       was not filled out. HealthNet will tell you what part(s) of the form
+       was not filled out. My Hospitali will tell you what part(s) of the form
        must be done. Retry step d.
 
 21. Canceling A Prescription - doctors only
@@ -421,7 +407,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Prescriptions'.
 
-    b) HealthNet will take you to your Prescriptions page.
+    b) My Hospitali will take you to your Prescriptions page.
 
     c) To cancel a prescription, press the 'Delete' button under the 'Options'
        column.
@@ -441,10 +427,10 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Admitted Patients'.
 
-    b) HealthNet will take you to your Admissions page.
+    b) My Hospitali will take you to your Admissions page.
 
     c) From there, you will see the record of admissions filled by the
-       HealthNet system. You can go them by sorting through it, going through
+       My Hospitali system. You can go them by sorting through it, going through
        each set of data manually, or searching for a particular item using the
        search bar in the upper right of the page.
 
@@ -453,7 +439,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Admitted Patients'.
 
-    b) HealthNet will take you to your Admissions page.
+    b) My Hospitali will take you to your Admissions page.
 
     c) Press the green 'Admit Patient' button located near the top of the page.
 
@@ -464,7 +450,7 @@ known bugs currently in the HealthNet system:
 
     f) You should be taken back to your Admissions page. You should see a green
        alert message telling you that the patient was successfully admiited.
-       If you do not see this, the patient was not admitted. HealthNet will
+       If you do not see this, the patient was not admitted. My Hospitali will
        tell you what part(s) of the form must be done. Retry steps d and e.
 
 24. Discharging A Patient - doctors only
@@ -472,23 +458,23 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Admitted Patients'.
 
-    b) HealthNet will take you to your Admissions page.
+    b) My Hospitali will take you to your Admissions page.
 
     c) To discharge a patient, press the 'Discharge' button under the 'Options'
        button.
 
-    d) HealthNet will ask you for confirmation of intent. Press 'Discharge'
+    d) My Hospitali will ask you for confirmation of intent. Press 'Discharge'
        again and the patient will now be discharged.
 
 25. Importing / Exporting A .csv File - administrators only
 
-    a) Keep in mind that only HealthNet administrators can view HealthNet
+    a) Keep in mind that only My Hospitali administrators can view My Hospitali
        activity.
 
     b) While you are logged into your account (as an administrator), go to the
        sidebar menu to the left of the page and press 'CSV Management'.
 
-    c) HealthNet will take you to the CSV Management page.
+    c) My Hospitali will take you to the CSV Management page.
 
     d) By default, the first option that'll be shown to you is to import
        information through a .csv file.
@@ -496,22 +482,22 @@ known bugs currently in the HealthNet system:
     e) To import through a .csv file, press the 'Choose file' button and
        select the .csv file that you would like to upload. Then, press
        'Submit'. You should see an green alert message telling you that
-       information was imported into HealthNet.
+       information was imported into My Hospitali.
 
     f) To export to a .csv file, press the 'Export Information' button and then
        select what information you would like to export. Once you have
        selected, then press 'Submit'. A .csv file will be downloaded by your
        web browswer containing the specified information.
 
-26. Viewing the Activity on HealthNet - administrators only
+26. Viewing the Activity on My Hospitali - administrators only
 
-    a) Keep in mind that only HealthNet administrators can view HealthNet
+    a) Keep in mind that only My Hospitali administrators can view My Hospitali
        activity.
 
     b) While you are logged into your account (as an administrator), go to the
        sidebar menu to the left of the page and press 'Viewing Activity'.
 
-    c) HealthNet will take you to the HealthNet activity page.
+    c) My Hospitali will take you to the My Hospitali activity page.
 
     d) From there, you can go through the logged activity by clicking on the
        table headers 'Type', 'Description', 'User', and 'Time' to sort by that
@@ -520,30 +506,30 @@ known bugs currently in the HealthNet system:
 
 27. Viewing System Statistics - administrators only
 
-    a) Keep in mind that only HealthNet administrators can view statistics
-       found from HealthNet.
+    a) Keep in mind that only My Hospitali administrators can view statistics
+       found from My Hospitali.
 
     b) While you are logged into your account (as an administrator), go to the
        sidebar menu to the left of the page and press 'View Statistics'.
 
-    c) HealthNet will take you to the HealthNet statistics page.
+    c) My Hospitali will take you to the My Hospitali statistics page.
 
     d) From there, you can see different statistics such as the number of
        patients admitted and the number of users registered. To narrow down
        statistics found between two points in time, type in a start time and an
        end time and then press 'Get Statistics'.
 
-28. Managing HealthNet Users - administrators only
+28. Managing My Hospitali Users - administrators only
 
-    a) Keep in mind that only HealthNet administrators can manage the users
-       registered in HealthNet.
+    a) Keep in mind that only My Hospitali administrators can manage the users
+       registered in My Hospitali.
 
     b) While you are logged into your account (as an administrator), go to the
        sidebar menu to the left of the page and press 'Manage Users'.
 
-    c) HealthNet will take you to the HealthNet user management page.
+    c) My Hospitali will take you to the My Hospitali user management page.
 
-    d) From there, you can go through the users created in HealthNet by
+    d) From there, you can go through the users created in My Hospitali by
        sorting by clicking the table headers 'Username','First name', 'Last
        name', and 'Role', going through each set of data manually, or
        searching for a particular item using the search bar in the upper right
@@ -562,7 +548,7 @@ known bugs currently in the HealthNet system:
     b) If user is a patient then their medical profile is displayed.
 
     If user is nurse or doctor:
-    b) Healthnet will take you to the Healthnet Patients List page that
+    b) My Hospitali will take you to the My Hospitali Patients List page that
        displays the patient's name, blood type, and allergy as well as an
        option column in a table.
 
@@ -577,7 +563,7 @@ known bugs currently in the HealthNet system:
     a) While you are logged into your account, go to the sidebar menu to the
        left of the page and press 'Medical Info'.
 
-    b) Healthnet will take you to the Healthnet Patients List page. that
+    b) My Hospitali will take you to the My Hospitali Patients List page. that
        displays the patient's name, blood type, and allergy as well as an
        options column in a table.
 
@@ -591,7 +577,7 @@ known bugs currently in the HealthNet system:
        Under the 'options' column to the farthest right of the table, click on
        the orange 'Update' button corresponding to the desired patient.
 
-    e) HealthNet will take you to the 'Update Medical Info' form. Fill out the
+    e) My Hospitali will take you to the 'Update Medical Info' form. Fill out the
        information asked for by the form.
 
     e) Once done, press the dark blue 'Update Medical Info' button located at
@@ -599,9 +585,5 @@ known bugs currently in the HealthNet system:
 
     f) You should see a green alert message telling you that the medical info
        was successfully updated. If you do not see this, the form was not
-       properly filled out. HealthNet will tell you what part(s) of the form
+       properly filled out. My Hospitali will tell you what part(s) of the form
        must one. Retry step e.
-
-
-
-
