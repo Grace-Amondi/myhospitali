@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load app_filters %}
+{% block title %}Update Medical Info{% endblock %}
+{% block sidebar_medicalinfo %}active{% endblock %}
+{% block body_header %}View Medical Info{% endblock %}
+{% block body %}
+<div class="well" style="background-color:cornflowerblue;color:#fff;padding:10px">You are not allowed to edit this form.</div>
+    {% include "singlepatientform.html" %}
+{% endblock %}

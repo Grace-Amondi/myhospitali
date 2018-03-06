@@ -56,5 +56,5 @@ urlpatterns = patterns(
 
     url(r'^medicalinfo/list/$', views_medicalInfo.list_view, name='medicalinfo/list'),
     url(r'^medicalinfo/update/$', views_medicalInfo.update_view, name='medicalinfo/update'),
-    url(r'^medicalinfo/patient/$', views_medicalInfo.update_view, name='medicalinfo/patient'),
+    url(r'^medicalinfo/patient/$', views_medicalInfo.detail_view, name='medicalinfo/patient'),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

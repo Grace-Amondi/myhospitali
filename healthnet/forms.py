@@ -4,7 +4,7 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 
-from healthnet.models import Account, Profile, Hospital, Admission, MedicalInfo, MedicalTest, US_STATES, Appointment, Message
+from healthnet.models import Account, Profile, Hospital, Admission, MedicalInfo, MedicalTest, COUNTRY, Appointment, Message
 
 
 def validate_username_available(username):
@@ -325,8 +325,8 @@ class HospitalForm(BasicForm):
     setup_field(city, "Enter the hospital's city")
     zip = forms.CharField(max_length=50)
     setup_field(zip, "Enter the hospital's zip code")
-    state = forms.ChoiceField(choices=US_STATES)
-    setup_field(state, "Select the hospital's state")
+    country = forms.ChoiceField(choices=COUNTRY)
+    setup_field(country, "Select the hospital's country")
     address = forms.CharField(max_length=50)
     setup_field(address, "Enter the hospital's address")
     name = forms.CharField(max_length=50)
@@ -431,7 +431,7 @@ class MedicalInfoForm(BasicForm):
     bloodType = forms.ChoiceField(label='Blood Type', choices=MedicalInfo.BLOOD, required=False)
     setup_field(bloodType)
     allergy = forms.CharField(max_length=100, required=False)
-    setup_field(allergy, "Enter allergies here")
+    setup_field(allergy, "You do not have permission")
     alzheimer = forms.BooleanField(required=False)
     setup_field(alzheimer)
     asthma = forms.BooleanField(required=False)
@@ -440,8 +440,10 @@ class MedicalInfoForm(BasicForm):
     setup_field(diabetes)
     stroke = forms.BooleanField(required=False)
     setup_field(stroke)
+    other = forms.CharField(required=False, max_length=200)
+    setup_field(other,"You do not have permission")
     comments = forms.CharField(max_length=500, required=False)
-    setup_field(comments, "Enter additional information here")
+    setup_field(comments, "You do not have permission")
 
     def assign(self, medicalInfo):
         medicalInfo.account = self.cleaned_data['account']

@@ -1,13 +1,22 @@
 {% extends "base.html" %}
 {% load app_filters %}
+{% load staticfiles %}
 {% block title %}Login{% endblock %}
 {% block brand_link %}{% endblock %}
 {% block nav_button %}<a href="/register/">Register</a>{% endblock %}
-{% block body_header %}Welcome to My Hospitali{% endblock %}
+
+{% block body_header %}<h1 style="text-align:center"><em>Welcome to My Hospitali</em></h1>{% endblock %}
 {% block body %}
+<div class="row">
+<div class="col-md-5 col-md-offset-4">
+        <img src="{% static 'jkuat.png' %}" style="width:60%;right:30px">
+</div>
+<div class="col-md-7 col-md-offset-2">
     <div class="row">
-        <p class="lead">Please login or click register to create an account below.</p>
+        <p class="lead" style="text-align:center">Please login or click register to create an account below.</p>
     </div>
+</div>
+</div>
     {% include "singleform.html" %}
     <div class="row">
         <div class="col-sm-12">
@@ -15,4 +24,6 @@
             <a class="btn btn-success col-sm-12" href="/register/" role="button">Register</a>
         </div>
     </div>
+    
+
 {% endblock %}

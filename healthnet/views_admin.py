@@ -64,7 +64,7 @@ def add_hospital_view(request):
             location = Location(
                 city=form.cleaned_data['city'],
                 zip=form.cleaned_data['zip'],
-                state=form.cleaned_data['state'],
+                country=form.cleaned_data['country'],
                 address=form.cleaned_data['address']
             )
             location.save()

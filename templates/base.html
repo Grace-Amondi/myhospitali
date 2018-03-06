@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 {% load app_filters %}
+{% load staticfiles %}
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Hospitali {% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/flatly-bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap-datetimepicker.min.css"/>
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <script src="{{STATIC_URL}}js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="{{STATIC_URL}}js/moment.min.js"></script>
     <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
     <script src="{{STATIC_URL}}js/bootstrap-datetimepicker.min.js"></script>
@@ -29,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/{% block brand_link %}profile/{% endblock %}"><i class="fa fa-hospital-o"></i>  My Hosptali</a>
+                <a class="navbar-brand" href="/{% block brand_link %}profile/{% endblock %}"><img src="{% static 'jkuat.png' %}" class="navbar-left" style="width:35px;height:37px;padding-bottom:7px;top:20px">MyHosptali</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -87,6 +91,7 @@
                         {% endif %}
                         {% if user.account.role == 40 %}
                             <li class="{% block sidebar_admin_users %}{% endblock %}"><a href="/admin/users/">Manage Users<i class="pull-right fa fa-users"></i></a></li>
+                            <li class="{% block sidebar_admin_add_hospital %}{% endblock %}"><a href="/admin/add_hospital/">Add Hospital<i class="pull-right fa fa-users"></i></a></li>
                             <li class="{% block sidebar_admin_activity %}{% endblock %}"><a href="/admin/activity/">View Activity<i class="pull-right fa fa-eye"></i></a></li>
                             <li class="{% block sidebar_admin_statistics %}{% endblock %}"><a href="/admin/statistics/">View Statistics<i class="pull-right fa fa-bar-chart"></i></a></li>
                             <li class="{% block sidebar_admin_import %}{% endblock %}"><a href="/admin/import/">CSV Management<i class="pull-right fa fa-upload"></i></a></li>
