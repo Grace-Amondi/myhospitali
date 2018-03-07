@@ -2,10 +2,10 @@
 
 **Installation**
 
-1. Make sure that the target environment for HealthNet has Python 3.2.2 and
+1. Make sure that the target environment for My Hospitali has Python 3.2.2 and
    Django 1.6.5 installed and running correctly.
 
-2. Unzip the compressed folder containing the HealthNet application into a
+2. Unzip the compressed folder containing the My Hospitali application into a
    suitable directory of your choice.
 
 3. Once that is done, open a command prompt window (Windows) or a Terminal
