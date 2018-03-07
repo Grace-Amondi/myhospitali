@@ -43,7 +43,7 @@ def calendar_view(request):
     # Parse search sorting
     appointment.parse_appointment_cancel(request, template_data)  # Parse appointment cancelling
     template_data['events'] = appointment.parse_appointments(request)  # Build list of appointments
-    return render(request, 'healthnet/appointment/calendar.html', template_data)
+    return render(request, 'healthnet/appointment/appointment_calendar.html', template_data)
 
 
 def update_view(request):

@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 from django.conf.urls.static import static
 from django.conf import settings
-
+# from django.contrib import admin
 from healthnet import views
 from healthnet import views_admin
 from healthnet import views_admission
@@ -16,18 +16,19 @@ from healthnet import views_medicalInfo
 
 urlpatterns = patterns(
     '',
+    # url(r'^admin/$', admin.site.urls),
     url(r'^$', views_home.login_view, name='index'),
     url(r'^logout/$', views_home.logout_view, name='logout'),
     url(r'^register/$', views_home.register_view, name='register'),
     url(r'^setup/$', views_home.setup_view, name='setup'),
-
     url(r'^error/denied/$', views_home.error_denied_view, name='error/denied'),
-
     url(r'^admin/users/$', views_admin.users_view, name='admin/users'),
     url(r'^admin/activity/$', views_admin.activity_view, name='admin/activity'),
     url(r'^admin/statistics/$', views_admin.statistic_view, name='admin/statistics'),
     url(r'^admin/createemployee/$', views_admin.createemployee_view, name='admin/createemployee'),
     url(r'^admin/add_hospital/$', views_admin.add_hospital_view, name='admin/add_hospital'),
+    url(r'^admin/list_hospital/$', views_admin.hospital_list, name='admin/list_hospital'),
+    url(r'^admin/list_hospital/update/$',views_admin.hospital_update, name='admin/update_hospital'),
     url(r'^admin/import/$', views_admin.csv_import_view, name='admin/import'),
     url(r'^admin/export/$', views_admin.csv_export_view, name='admin/export'),
 

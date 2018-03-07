@@ -76,11 +76,67 @@ def add_hospital_view(request):
             hospital.save()
             form = HospitalForm()  # Clean the form when the page is redisplayed
             template_data['alert_success'] = "Successfully added the hospital!"
+            return HttpResponseRedirect('/admin/list_hospital/')
     else:
         form = HospitalForm()
     template_data['form'] = form
     return render(request, 'healthnet/admin/add_hospital.html', template_data)
 
+def hospital_list(request):
+    # Authentication check.
+    authentication_result = views.authentication_check(
+        request,
+        [Account.ACCOUNT_ADMIN]
+    )
+    if authentication_result is not None: return authentication_result
+    # Get the template data from the session
+    template_data = views.parse_session(request)
+    # Proceed with the rest of the view
+    template_data['query'] = Hospital.objects.all()
+    return render(request, 'healthnet/admin/list_hospital.html', template_data)
+
+def hospital_update(request):
+    # Authentication check.
+    authentication_result = views.authentication_check(
+        request,
+        [Account.ACCOUNT_ADMIN]
+    )
+    if authentication_result is not None: return authentication_result
+    # Validation Check. Make sure an appointment exists for the given pk.
+    if 'pk' in request.GET:
+        if request.user.account.role != Account.ACCOUNT_ADMIN:
+            request.session['alert_danger'] = "You don't have permission to view that page."
+            return HttpResponseRedirect('/error/denied/')
+        pk = request.GET['pk']
+        try:
+            hospital = Hospital.objects.get(pk=pk)
+        except Exception:
+            request.session['alert_danger'] = "The requested hospital does not exist."
+            return HttpResponseRedirect('/error/denied/')
+    else:
+        hospital = Hospital.objects.all()
+    # Get the template data from the session
+    template_data = views.parse_session(
+        request, {
+            'form_button': "Update Hospital Info",
+        })
+    if 'pk' in request.GET:
+        template_data['form_action'] = "?pk=" + pk
+    # Proceed with the rest of the view
+    request.POST._mutable = True
+    request.POST['account'] = hospital.pk
+    if request.method == 'POST':
+        form = HospitalForm(request.POST)
+        if form.is_valid():
+            form.assign(hospital)
+            medicalinfo.save()
+            logger.log(Action.ACTION_MEDICALINFO, 'Hospital info updated', request.user.account)
+            template_data['alert_success'] = "The Hospital info has been updated!"
+    else:
+        form = HospitalForm(hospital.get_populated_fields())
+    template_data['form'] = form
+    form.disable_field('name')
+    return render(request, 'healthnet/admin/update_hospital.html', template_data)
 
 def createemployee_view(request):
     # Authentication check.

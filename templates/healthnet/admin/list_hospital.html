@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load app_filters %}
+{% block title %}View List of Hospitals{% endblock %}
+{% block sidebar_medicalinfo %}active{% endblock %}
+{% block body_header %}
+    View List of Hospitals<br>
+    <a class="btn btn-success btn-sm" href="/admin/add_hospital/" role="button">Add Hospital</a>
+
+{% endblock %}
+{% block body %}
+    <table id="datatable" class="table table-hover table-striped table-bordered">
+        <thead>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Location</th>
+            <th data-defaultsort='disabled'>Options</th>
+        </thead>
+        <tbody>
+            {% for hospital in query %}
+                <tr>
+                    <td>{{ hospital.name  }}</td>
+                    <td>{{ hospital.phone }}</td>
+                    <td>{{ hospital.location }}</td>
+                    <td>
+                        {% if not user.account.role == 10 %}
+                            <a class="btn btn-warning btn-sm" href="update/?pk={{ hospital.pk }}" role="button">Update</a>
+                            <a class="btn btn-danger btn-sm" href="update/?pk={{ hospital.pk }}" role="button">Remove</a>
+
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        <tbody>
+    </table>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#datatable').DataTable({
+                "columnDefs": [
+                    { "orderable": false, "targets": 3 },
+                    { "searchable": false, "targets": 3 }
+                ]
+            });
+        } );
+    </script>
+{% endblock %}

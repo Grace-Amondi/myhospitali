@@ -24,7 +24,8 @@ INSURANCES = (
 COUNTRY = (
     ("Kenya", "Kenya"),
     ("Uganda", "Uganda"),
-    ("Tanzania", "Tanzania")
+    ("Tanzania", "Tanzania"),
+    ("Rwanda", "Rwanda")
 )
 
 
@@ -48,9 +49,18 @@ class Hospital(models.Model):
     phone = models.CharField(max_length=20)
     location = models.OneToOneField(Location)
 
+    def get_populated_fields(self):
+            fields = {
+                'name': self.name,
+                'phone': self.phone,
+                'location': self.location,
+            }
+            return fields
+
     def __str__(self):
         return self.name
 
+ 
     class Admin:
         list_display = (
             'name',
